@@ -3,6 +3,9 @@ package quickSort;
 public class QuickSort {
 
     public static void quickSort(int[] arr, int lowIndex, int highIndex){
+        if (arr.length<=1 || lowIndex>=highIndex){
+            return;
+        }
         // select pivot
         int pivot = arr[highIndex];
 
