@@ -21,7 +21,7 @@ public class BubbleSort {
     public static void bubbleSort(int[] arr){
         boolean swapped = false;
         do {
-            swapped = false;
+            swapped = false; // here this is added to prevent infinitive loop
             for (int i = 1; i<arr.length; i++){
                 if (arr[i-1] > arr[i]){
                     int temp = arr[i];
